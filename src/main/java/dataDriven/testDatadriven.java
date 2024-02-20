@@ -10,26 +10,24 @@ import java.util.Scanner;
 import com.opencsv.CSVReader;
 
 public class testDatadriven {
-	
-	
-	
-	 public String readCsv(String path) {
 
-		    try {
+	public String readCsv(String path) {
 
-		        FileReader filereader = new FileReader(path);
+		try {
 
-		        CSVReader csvReader = new CSVReader(filereader);
-		        String[] nextRecord;
+			FileReader filereader = new FileReader(path);
 
-		        while ((nextRecord = csvReader.readNext()) != null) {
-		            for (String cell : nextRecord) {
-		                return cell;
-		            }
-		        }
-		    } catch (Exception e) {
-		        e.printStackTrace();
-		    }
-		    throw new IllegalArgumentException("Something went wrong. Path to file is wrong or cell not found.");
+			CSVReader csvReader = new CSVReader(filereader);
+			String[] nextRecord;
+
+			while ((nextRecord = csvReader.readNext()) != null) {
+				for (String cell : nextRecord) {
+					return cell;
+				}
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
-   }
+		throw new IllegalArgumentException("Something went wrong. Path to file is wrong or cell not found.");
+	}
+}

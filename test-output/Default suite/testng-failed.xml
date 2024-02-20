@@ -5,9 +5,11 @@
     <classes>
       <class name="tryloop.tests.dataValidation">
         <methods>
+          <include name="Check_feb_month"/>
+          <include name="Check_oct_month"/>
           <include name="teardown"/>
+          <include name="Check_jan_month"/>
           <include name="excutebefore"/>
-          <include name="Check_extrct_data"/>
         </methods>
       </class> <!-- tryloop.tests.dataValidation -->
     </classes>

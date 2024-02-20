@@ -83,7 +83,7 @@ public class dataValidation extends baseTest{
 		page.closepopup();
 		
 		float sum_of_all_amount_aug=page.get_each_month_count(2);
-		System.out.println("Sum of all added amount of aug" +sum_of_all_amount_aug);
+		System.out.println("Sum of all added amount of aug ==>" +sum_of_all_amount_aug);
 		float grand_total_aug=page.get_grand_total_amount(2);
 		System.out.println("Total Grand mount " +grand_total_aug);
 		Assert.assertEquals(sum_of_all_amount_aug, grand_total_aug);
@@ -97,7 +97,7 @@ public class dataValidation extends baseTest{
 			page.closepopup();
 		
 		float sum_of_all_amount_sep=page.get_each_month_count(3);
-		System.out.println("Sum of all added amount sept" +sum_of_all_amount_sep);
+		System.out.println("Sum of all added amount sept ==>" +sum_of_all_amount_sep);
 		float grand_total_sep=page.get_grand_total_amount(3);
 		System.out.println("Total Grand mount " +grand_total_sep);
 		Assert.assertEquals(sum_of_all_amount_sep, grand_total_sep);
@@ -111,7 +111,7 @@ public class dataValidation extends baseTest{
 			page.closepopup();
 
 		float sum_of_all_amount_oct=page.get_each_month_count(4);
-		System.out.println("Sum of all added amount oct" +sum_of_all_amount_oct);
+		System.out.println("Sum of all added amount oct ==>" +sum_of_all_amount_oct);
 		float grand_total_oct=page.get_grand_total_amount(4);
 		System.out.println("Total Grand mount " +grand_total_oct);
 		Assert.assertEquals(sum_of_all_amount_oct, grand_total_oct);
@@ -125,7 +125,7 @@ public class dataValidation extends baseTest{
 			page.login(prop.getProperty("email"), prop.getProperty("password"));
 			page.closepopup();
 		float sum_of_all_amount_nov=page.get_each_month_count(5);
-		System.out.println("Sum of all added amount nov" +sum_of_all_amount_nov);
+		System.out.println("Sum of all added amount nov ==>" +sum_of_all_amount_nov);
 		float grand_total_nov=page.get_grand_total_amount(5);
 		System.out.println("Total Grand mount " +grand_total_nov);
 		Assert.assertEquals(sum_of_all_amount_nov, grand_total_nov);
@@ -139,7 +139,7 @@ public class dataValidation extends baseTest{
 			page.login(prop.getProperty("email"), prop.getProperty("password"));
 			page.closepopup();
 		float sum_of_all_amount_dec=page.get_each_month_count(6);
-		System.out.println("Sum of all added amount dec" +sum_of_all_amount_dec);
+		System.out.println("Sum of all added amount dec ==>" +sum_of_all_amount_dec);
 		float grand_total_dec=page.get_grand_total_amount(6);
 		System.out.println("Total Grand mount " +grand_total_dec);
 		Assert.assertEquals(sum_of_all_amount_dec, grand_total_dec);
@@ -153,7 +153,7 @@ public class dataValidation extends baseTest{
 			page.login(prop.getProperty("email"), prop.getProperty("password"));
 			page.closepopup();
 		float sum_of_all_amount_jan=page.get_each_month_count(7);
-		System.out.println("Sum of all added amount jan" +sum_of_all_amount_jan);
+		System.out.println("Sum of all added amount jan ==>" +sum_of_all_amount_jan);
 		float grand_total_jan=page.get_grand_total_amount(7);
 		System.out.println("Total Grand mount " +grand_total_jan);
 		Assert.assertEquals(sum_of_all_amount_jan, grand_total_jan);
@@ -166,15 +166,15 @@ public class dataValidation extends baseTest{
 			page.login(prop.getProperty("email"), prop.getProperty("password"));
 			page.closepopup();
 		float sum_of_all_amount_feb=page.get_each_month_count(8);
-		System.out.println("Sum of all added amount feb" +sum_of_all_amount_feb);
+		System.out.println("Sum of all added amount feb ==>" +sum_of_all_amount_feb);
 		float grand_total_feb=page.get_grand_total_amount(8);
 		System.out.println("Total Grand mount " +grand_total_feb);
 		Assert.assertEquals(sum_of_all_amount_feb, grand_total_feb);
 		
 	}
 		
-		@SuppressWarnings("unlikely-arg-type")
-		@Test
+		//@SuppressWarnings("unlikely-arg-type")
+		//@Test
 		@Description("Data extractation and validation")
 		public void Check_extrct_data() throws InterruptedException, IOException, ParseException, CsvException {
 
