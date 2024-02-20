@@ -20,7 +20,6 @@ public class baseTest {
 	public static FileInputStream fis;
 	public static FileInputStream fis1;
 	public static FileInputStream filePath;
-	//public static String location;
 	public static String location=System.getProperty("user.dir")+File.separator+"DownloadFolder"+File.separator;
 	public String expected="chargebacks_payouts_overview.csv";
 	
@@ -35,8 +34,6 @@ public class baseTest {
 	
 	public void init() {
 
-		//location=System.getProperty("user.dir")+File.separator+"DownloadFolder"+File.separator;
-	
 		File downloadFolder = new File(location);
         downloadFolder.mkdir();
 		WebDriverManager.chromedriver().setup();
@@ -58,5 +55,4 @@ public class baseTest {
 		driver.get(prop.getProperty("URL"));
 	}
 }
-
 }
